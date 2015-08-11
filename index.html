@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="ui.bootstrap.demo">
+  <head>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.1.js"></script>
+    <script src="js/example.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/Form.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet" >-->
+      <script src="js/angular.js"></script>
+    <script src="js/ui-bootstrap-tpls.js"></script>
+    <script src="js/example.js"></script>
+    <script src="js/collapse.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet" 
+  </head>
+  <body>
+
+<div ng-controller="AccordionDemoCtrl">
+    <div class = "jumbotron">
+            <div class="container">
+                <div class = "row">
+                    <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <p><Strong>Smart</Strong>lock</p>
+                    </div>
+                    <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <img src = "Images/SmartLockLogo.png" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div>
+        <p class = 'description'>Smart lock helps make your passwords more secure</p>
+    </div>
+
+</div>
+      <div ng-controller = 'formController' class ='password'>
+          
+        <form novalidate class="simple-form">
+    Pin 1: <input type="number" name="input" ng-model="example.value1"
+           min="0" max="99" required/>
+    Pin 2: <input type="number" name="input" ng-model="example.value2"
+           min="0" max="99" required />
+    String: <input type="text" ng-model ="password"/>              
+                  <hr>
+                  
+
+    <input  type="submit" ng-click="update()" value="Generate Password" />
+
+            <hr>
+            
+    <span class="result">{{ password }}</span>
+    
+            
+  </form>
+          
+      </div>
+      <script src="js/Form.js"></script>    
+  </body>
+</html>

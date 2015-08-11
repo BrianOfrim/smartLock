@@ -1,0 +1,54 @@
+
+.jumbotron {
+    background-color: #36363b;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+    color:#66db81;
+    font-size: 34px;
+    
+    
+    
+}
+
+.jumbotron p{
+    font-size: 70px;
+    margin-top: 60px;
+    padding-left: 50px;
+}
+
+.jumbotron img{
+    
+    max-width: 25%;
+    position: absolute;
+    right:50px;
+    top: 10px; 
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+body {
+ background-color: #66db81;   
+}
+
+.password {
+background-color: #66db81;
+text-align: center;
+border: 
+}
+
+.description {
+    color: #36363b;
+    text-align: center;
+    font-family: sans-serif;
+     font-size: 30px;
+}
+
+.result {
+    color: #36363b;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px; 
+}
+
