@@ -1,2 +1,2 @@
 # smartLock
-A tool for making your passwords more secure
+A web app for making your passwords more secure
