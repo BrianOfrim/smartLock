@@ -52,3 +52,12 @@ border:
     font-size: 20px; 
 }
 
+form{
+    font-size: 18px;
+}
+
+.formElement{
+    background-color: #a7e1b4;
+    border-bottom-color: #36363b;
+}
+

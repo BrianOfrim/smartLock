@@ -38,20 +38,20 @@
 </div>
       <div ng-controller = 'formController' class ='password'>
           
-        <form novalidate class="simple-form">
-    Pin 1: <input type="number" name="input" ng-model="example.value1"
-           min="0" max="99" required/>
-    Pin 2: <input type="number" name="input" ng-model="example.value2"
-           min="0" max="99" required />
-    String: <input type="text" ng-model ="password"/>              
+        <form novalidate class="simple-form" name = "passwordForm">
+    Pin 1 : <input class = "formElement" style ="width:50px" type="number" name="input" ng-model="example.value1"
+           min="1" max="9" placeholder = "1-9"required/>
+    Pin 2: <input class = "formElement" style ="width:100px" type="number" name="input" ng-model="example.value2"
+           min="1" max="100000" placeholder = "1-100000" required />
+    String: <input class = "formElement" type="password" ng-model ="password" placeholder = "Password" required/>              
                   <hr>
                   
 
-    <input  type="submit" ng-click="update()" value="Generate Password" />
+    <button ng-click="generatePassword()" ng-disabled = "passwordForm.$invalid"/>Generate Password</button>
 
             <hr>
             
-    <span class="result">{{ password }}</span>
+    <span class="result">{{ generatedPassword }}</span>
     
             
   </form>

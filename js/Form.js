@@ -1,12 +1,13 @@
 angular.module('ui.bootstrap.demo').controller("formController" ,['$scope', function($scope) {
       $scope.example = {
-        value1: 19,
-        value2: 13
+        value1: Number,
+        value2: Number
       };
-    $scope.password = 'lol';
+    $scope.password = '';
+    $scope.gerneratedPassword = '';
     $scope.sum = 5;
     
-    $scope.update = function() {
+    $scope.generatePassword = function() {
         var temp = $scope.password.split('');
         var temp1 = [];
         for( i = 0; i<temp.length; i++){
@@ -31,6 +32,7 @@ angular.module('ui.bootstrap.demo').controller("formController" ,['$scope', func
             temp4.push(String.fromCharCode(temp3[l]));  
         };
         $scope.password = temp4.join("");
+        $scope.generatedPassword = $scope.password;
     };
     }]);
                                                                  
