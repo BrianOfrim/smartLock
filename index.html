@@ -8,7 +8,7 @@
     <script src="js/Form.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="css/main.css" rel="stylesheet" >-->
-      <script src="js/angular.js"></script>
+    <script src="js/angular.js"></script>
     <script src="js/ui-bootstrap-tpls.js"></script>
     <script src="js/example.js"></script>
     <script src="js/collapse.js"></script>
@@ -39,10 +39,8 @@
       <div ng-controller = 'formController' class ='password'>
           
         <form novalidate class="simple-form" name = "passwordForm">
-    Pin 1 : <input class = "formElement" style ="width:50px" type="number" name="input" ng-model="example.value1"
-           min="1" max="9" placeholder = "1-9"required/>
-    Pin 2: <input class = "formElement" style ="width:100px" type="number" name="input" ng-model="example.value2"
-           min="1" max="100000" placeholder = "1-100000" required />
+    Pin 1 : <input class = "formElement" style ="width:50px" type="number" name="input" ng-model="pins.pin1" min="1" max="9" placeholder = "1-9"required/>
+    Pin 2: <input class = "formElement" style ="width:100px" type="number" name="input" ng-model="pins.pin2" min="1" max="100000" placeholder = "1-100000" required />
     String: <input class = "formElement" type="password" ng-model ="password" placeholder = "Password" required/>              
                   <hr>
                   
